@@ -20,6 +20,9 @@ img{
     width: 100%;
     height: auto;
 }
+.slider-container{
+    position: relative;
+}
 
 .slider{
     position: relative;
@@ -30,4 +33,30 @@ img{
 
 .slide{
     position: absolute;
+}
+.nav{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.nav:hover{
+    background: #000;
+}
+.nav.prev{
+    left: 1rem;
+}
+.nav.next{
+    right: 1rem;
+}
+.nav svg{
+    fill: currentColor;
 }
